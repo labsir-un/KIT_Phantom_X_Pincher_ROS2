@@ -169,10 +169,9 @@
   <!--       -->
   <!-- Macro -->
   <!--       -->
-  <xacro:macro name="phantomx_pincher_dummy_link" params="
-    link_name
-    gazebo_preserve_fixed_joint:=true
-  ">
+  <xacro:macro name="phantomx_pincher_dummy_link"
+      params="link_name collision:=false gazebo_preserve_fixed_joint:=false"
+  >
     <link name="${link_name}">
       <xacro:if value="${gazebo_preserve_fixed_joint}">
         <inertial>

@@ -15,7 +15,7 @@ from launch.substitutions import (
 )
 from launch_ros.actions import Node
 from launch_ros.substitutions import FindPackageShare
-
+from launch_ros.parameter_descriptions import ParameterValue
 
 def generate_launch_description() -> LaunchDescription:
     # Declare all launch arguments
@@ -54,7 +54,12 @@ def generate_launch_description() -> LaunchDescription:
             mimic_finger_joints,
         ]
     )
-    robot_description = {"robot_description": _robot_description_xml}
+    robot_description = {
+        "robot_description": ParameterValue(
+            _robot_description_xml,
+            value_type=str,
+        )
+    }
 
     # List of nodes to be launched
     nodes = [
