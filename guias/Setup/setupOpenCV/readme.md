@@ -45,7 +45,7 @@ mkdir -p ~/opencv_build
 cd ~/opencv_build
 ```
 
-Clonar OpenCV (el transcript referencia la URL oficial del repo).
+Clonar OpenCV.
 
 ```bash
 git clone https://github.com/opencv/opencv.git
