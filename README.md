@@ -5,6 +5,9 @@
 
 **Director:** Pedro Fabián Cárdenas Herrera 
 
+
+![Vista general del kit en RViz](rvizKIT.png)
+
 ---
 ## EN CASO DE EMERGENCIA
 
@@ -148,6 +151,12 @@ En la siguiente guia se encuentra una serie de pasos para añadir elementos xacr
 <details>
   <summary><b>Ep. 10</b> — <a href="https://www.youtube.com/watch?v=GsfinJpJwyY">Cambiar posición del TCP</a></summary>
 </details>
+
+> **Importante:** Para cambiar el TCP a suction puede usar la
+> variable `use_suction_cup:=true` con el paquete bringup usando el
+> siguiente comando:
+
+> `ros2 launch phantomx_pincher_bringup phantomx_pincher.launch.py use_suction_cup:=true`
 
 ---
 

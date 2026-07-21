@@ -74,7 +74,8 @@ Video largo y sin guion donde se añade la ventosa (suction cup) al archivo `pha
 <details>
 <summary><b>Ep. 10</b> — <a href="https://www.youtube.com/watch?v=GsfinJpJwyY">Cambiar posición del TCP</a></summary>
 
-Video de cierre de la serie de URDF donde se explica cómo cambiar el origen del TCP en el archivo xacro del Phantom X Pincher, manejando dos TCPs (con y sin ventosa) mediante un condicional controlado por la variable `use_suction`. Se muestra cómo obtener las coordenadas del nuevo TCP desde Inventor y ajustar la rotación en Y para conservar la orientación del marco del efector final, además de corregir un error previo sobre el link padre del acople de la ventosa. Incluye una prueba práctica moviendo el robot con los comandos de MoveIt para verificar que el TCP se desplaza a la posición correcta.
+Video de cierre de la serie de URDF donde se explica cómo cambiar el origen del TCP en el archivo xacro del Phantom X Pincher, manejando dos TCPs (con y sin ventosa) mediante un condicional controlado por la variable `use_suction` con el comando `ros2 launch phantomx_pincher_bringup phantomx_pincher.launch.py use_suction_cup:=true`
+. Se muestra cómo obtener las coordenadas del nuevo TCP desde Inventor y ajustar la rotación en Y para conservar la orientación del marco del efector final, además de corregir un error previo sobre el link padre del acople de la ventosa. Incluye una prueba práctica moviendo el robot con los comandos de MoveIt para verificar que el TCP se desplaza a la posición correcta.
 
 </details>
 
